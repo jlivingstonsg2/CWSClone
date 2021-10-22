@@ -12,8 +12,10 @@ namespace WebPage8.Controllers
         {
             return View();
         }
-        public IActionResult BrandItems()
+        public IActionResult BrandItems(string id)
         {
+            int BrandId = String.IsNullOrEmpty(id) ? 0 : Convert.ToInt16(id);
+            ViewBag.Id = BrandId; 
             return View();
         }
         public IActionResult Detail()

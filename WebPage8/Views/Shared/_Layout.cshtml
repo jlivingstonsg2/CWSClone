@@ -7,7 +7,18 @@
 
     <title>@ViewBag.Title</title>
 
-    <link rel="stylesheet" href="~/styles/site.css" />
+    @*<link rel="stylesheet" href="~/styles/site.css" />*@
+    <link rel="stylesheet" href="~/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css" />
+    <link rel="stylesheet" href="~/fonts/pe-icon-7-stroke/css/helper.css" />
+    <link rel="stylesheet" href="~/styles/style.css" />
+    <link rel="stylesheet" href="~/styles/theme.css" />
+    <link rel="stylesheet" href="~/styles/slider.css" />
+    <link rel="stylesheet" href="~/vendor/fontawesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="~/vendor/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/vendor/owlcarousel/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="~/vendor/bootstrap-star-rating/css/star-rating.css" />
+    <link rel="stylesheet" href="~/styles/login.css" />
+
     <script src="~/scripts/site.js"></script>
 
 
@@ -25,7 +36,22 @@
     @RenderSection("scripts", required: false)
 
 
-   
+
+    <script>
+        $(document).ready(function () {
+
+          
+            $('#carousel').carousel({
+                interval: 5000,
+                pause: false,
+              
+
+            })
+
+
+
+        });
+    </script>
 
 
 

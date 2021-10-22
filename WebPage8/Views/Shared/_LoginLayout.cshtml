@@ -8,14 +8,21 @@
     <title>Computer Web Shop | Login</title>
 
     <link rel="stylesheet" href="~/styles/site.css" />
+
+
+
     <script src="~/scripts/site.js"></script>
 
-
+    <style>
+        .row {
+          background-color:#ffffff!important;
+        }
+    </style>
 </head>
 
 <body class="landing-page">
     <!-- Header -->
-    @Html.Partial("_LayoutHeader")
+    @Html.Partial("_LayoutProductHeader")
     <div>
         <div class="container">
             <main role="main" class="pb-3">
@@ -24,7 +31,18 @@
         </div>
     </div>
     <!-- Footer -->
+    
     @Html.Partial("_LayoutFooter")
     @RenderSection("Scripts", required: false)
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var $div = $('.col-md-offset-2');
+           // alert($div.contents());
+            $div.contents().remove();
+            $div.html('<section><h4><a href="/Identity/Account/Login">Login to admin account.</a></h4></section>');
+
+        });
+    </script>
 </body>
 </html>

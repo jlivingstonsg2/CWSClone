@@ -3,6 +3,7 @@
 @{
     ViewBag.Title = "Computer Web Shop | Brand Items";
     Layout = "~/Views/Shared/_Layout.cshtml";
+    int brandId = ViewBag.Id;
 }
 
 @section headerSection {
@@ -11,83 +12,79 @@
 }
 <link href="@Url.Content("~/styles/slider.css")" rel="stylesheet" />
 <script src="@Url.Content("~/Scripts/bootstrap-slider.js")"></script>
- 
+<style>
+
+    .board {
+        background-color: #524757;
+        color: white;
+        height: 100%;
+        padding: 10px;
+    }
+       </style>
 <section>
     <div class="container">
         <div class="col-md-4 col-sm-4">
             <div class="seller-leftbox text-center">
                 <b>€ 10</b> <input id="ex2" type="text" class="span2" value="" data-slider-min="10" data-slider-max="1000" data-slider-step="5" data-slider-value="[250,450]" /> <b>€ 1000</b>
             </div>
-            @*<div class="seller-leftbox text-center">
-                <div class="img-circlebig"> <img src="@Url.Content("~/images/brand/dell.png")" id="imgPhoto" class="img-circle m-b" alt="logo"></div>
-                <div class="stats-label text-color"> <span id="spnDisplayTitle" class="font-extra-bold font-uppercase"></span></div>
-
-                <span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span>
-                <p class="p-m">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text<br />
-
-                </p>
-                <p class="p-m">
-                    <span id="spnDescription">
-                        <br />
-                        <small></small>
-                    </span>
-                </p>
-
-            </div>*@
-
-
-
         </div>
 
-        <div class="col-md-8 col-sm-8">
-            <div class="col-md-12 col-sm-6" style="padding-bottom: 10px;"> <img src="@Url.Content("~/images/sam-small.png")" class="img-responsive"> </div>
+        <div class="col-md-8 col-sm-8  no-padding">
+            <div class="col-md-12 col-sm-6 no-padding" >
+                @*<img src="@Url.Content("~/images/sam-small.png")" class="img-responsive">*@
+                <div class="col-md-4  no-padding">
+
+                        <div class="board"><h1 class="h1-responsive" style="color:white" id="txtBrandName"> </h1></div>
+
+                </div>
+               
+            </div>
             <div class="row product-container">
-                <div onclick="@("window.location.href='" + @Url.Action("Detail", "Product") + "'");" class="col-lg-6 col-sm-8" style="cursor:pointer;">
+                <div class="col-lg-6 col-sm-8">
                     <div class="hpanel">
                         <div class="panel-body no-padding poluritm">
-                            <div class="entry-thumbnailsmall"> <img src="@Url.Content("~/images/pro2.png")" class="img-responsive"> </div>
-                            <div class="p-sm productdetail">
+                            <div class="entry-thumbnailsmall" style="cursor:pointer;" onclick="@("window.location.href='" + @Url.Action("Detail", "Product") + "'");"> <img src="@Url.Content("~/images/pro2.png")" class="img-responsive"> </div>
+                            <div class="p-sm productdetail" style="margin-bottom: 30px !important;">
                                 <h4>Item Title</h4>
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                <button type="button" onclick="@("window.location.href='" + @Url.Action("Detail", "Product") + "'");" class="btn btn-success btn-sm pull-right">Köp</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-8">
+                    <div class="hpanel">
+                        <div class="panel-body no-padding poluritm">
+                            <div class="entry-thumbnailsmall" style="cursor:pointer;" onclick="@("window.location.href='" + @Url.Action("Detail", "Product") + "'");"> <img src="@Url.Content("~/images/pro2.png")" class="img-responsive"> </div>
+                            <div class="p-sm productdetail" style="margin-bottom: 30px !important;">
+                                <h4>Item Title</h4>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                <button type="button" onclick="@("window.location.href='" + @Url.Action("Detail", "Product") + "'");" class="btn btn-success btn-sm pull-right">Köp</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-8">
+                    <div class="hpanel">
+                        <div class="panel-body no-padding poluritm">
+                            <div class="entry-thumbnailsmall" style="cursor:pointer;" onclick="@("window.location.href='" + @Url.Action("Detail", "Product") + "'");"> <img src="@Url.Content("~/images/pro2.png")" class="img-responsive"> </div>
+                            <div class="p-sm productdetail" style="margin-bottom: 30px !important;">
+                                <h4>Item Title</h4>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                <button type="button" onclick="@("window.location.href='" + @Url.Action("Detail", "Product") + "'");" class="btn btn-success btn-sm pull-right">Köp</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div onclick="@("window.location.href='" + @Url.Action("Detail", "Product") + "'");" class="col-lg-6 col-sm-8" style="cursor:pointer;">
+                <div class="col-lg-6 col-sm-8">
                     <div class="hpanel">
                         <div class="panel-body no-padding poluritm">
-                            <div class="entry-thumbnailsmall"> <img src="@Url.Content("~/images/pro2.png")" class="img-responsive"> </div>
-                            <div class="p-sm productdetail">
+                            <div class="entry-thumbnailsmall" style="cursor:pointer;" onclick="@("window.location.href='" + @Url.Action("Detail", "Product") + "'");"> <img src="@Url.Content("~/images/pro2.png")" class="img-responsive"> </div>
+                            <div class="p-sm productdetail" style="margin-bottom: 30px !important;">
                                 <h4>Item Title</h4>
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                @*<h4 class="text-success"> $1 206,40</h4>*@
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div onclick="@("window.location.href='" + @Url.Action("Detail", "Product") + "'");" class="col-lg-6 col-sm-8" style="cursor:pointer;">
-                    <div class="hpanel">
-                        <div class="panel-body no-padding poluritm">
-                            <div class="entry-thumbnailsmall"> <img src="@Url.Content("~/images/pro2.png")" class="img-responsive"> </div>
-                            <div class="p-sm productdetail">
-                                <h4>Item Title</h4>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                @*<h4 class="text-success"> $1 206,40</h4>*@
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div onclick="@("window.location.href='" + @Url.Action("Detail", "Product") + "'");" class="col-lg-6 col-sm-8" style="cursor:pointer;">
-                    <div class="hpanel">
-                        <div class="panel-body no-padding poluritm">
-                            <div class="entry-thumbnailsmall"> <img src="@Url.Content("~/images/pro2.png")" class="img-responsive"> </div>
-                            <div class="p-sm productdetail">
-                                <h4>Item Title</h4>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                @*<h4 class="text-success"> $1 206,40</h4>*@
+                                <button type="button" onclick="@("window.location.href='" + @Url.Action("Detail", "Product") + "'");" class="btn btn-success btn-sm pull-right">Köp</button>
                             </div>
                         </div>
                     </div>
@@ -100,10 +97,32 @@
 </section>
 <script>
     $(document).ready(function () {
-        //alert("show")
+
         $("#ex2").slider({});
 
-        // Without JQuery
-        //var slider = new Slider('#ex2', {});
+        switch (@brandId) {
+            case 1:
+                $("#txtBrandName").text("Acer");
+                break;
+            case 2:
+                $("#txtBrandName").text("Samsung");
+                break;
+            case 3:
+                $("#txtBrandName").text("Dell");
+                break;
+            case 4:
+                $("#txtBrandName").text("HP");
+                break;
+            case 5:
+                $("#txtBrandName").text("Asus");
+                break;
+            case 6:
+                $("#txtBrandName").text("Lenovo");
+                break;
+            default:
+                $("#txtBrandName").text("Dell");
+        }
     });
+
+
 </script>

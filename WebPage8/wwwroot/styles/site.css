@@ -2230,13 +2230,13 @@ html {
   overflow-x: hidden!important;
 }
 body {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #fff;
-  font-size: 13px;
-  color: #6a6c6f;
-  margin: 0;
-  padding: 0;
-  height: 100%;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    background-color: #f1f3f6 !important;
+    font-size: 13px !important;
+    color: #6a6c6f !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 100% !important;
 }
 #header {
   background-color: #fff;
