@@ -1,0 +1,37 @@
+[
+  {
+    "outputFileName": "wwwroot/styles/site.css",
+    "inputFiles": [
+      "wwwroot/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css",
+      "wwwroot/fonts/pe-icon-7-stroke/css/helper.css",
+      "wwwroot/styles/style.css",
+      "wwwroot/styles/theme.css",
+      "wwwroot/styles/slider.css",
+      "wwwroot/vendor/fontawesome/css/font-awesome.css",
+      "wwwroot/vendor/bootstrap/dist/css/bootstrap.css",
+      "wwwroot/vendor/owlcarousel/assets/owl.carousel.min.css",
+      "wwwroot/vendor/bootstrap-star-rating/css/star-rating.css",
+      "wwwroot/styles/login.css"
+    ],
+    "minify": {
+      "enabled": false,
+      "renameLocals": true
+    }
+  },
+  {
+    "outputFileName": "wwwroot/scripts/site.js",
+    "inputFiles": [
+      "wwwroot/vendor/jquery/dist/jquery.min.js",
+      "wwwroot/vendor/bootstrap/dist/js/bootstrap.min.js",
+      "wwwroot/vendor/owlcarousel/owl.carousel.js",
+      "wwwroot/scripts/theme.js",
+      "wwwroot/scripts/homer.js",
+      "wwwroot/vendor/bootstrap-star-rating/js/star-rating.min.js",
+      "wwwroot/scripts/bootstrap-slider.js"
+    ],
+    "minify": {
+      "enabled": false,
+      "renameLocals": true
+    }
+  }
+]

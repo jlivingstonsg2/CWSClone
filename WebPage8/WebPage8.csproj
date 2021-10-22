@@ -1,0 +1,100 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>aspnet-WebPage8-84B113D1-0FA4-4A4A-987B-68352BD65590</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\vendor\animate.css\**" />
+    <Compile Remove="wwwroot\vendor\awesome-bootstrap-checkbox\**" />
+    <Compile Remove="wwwroot\vendor\bootstrap-datepicker-master\**" />
+    <Compile Remove="wwwroot\vendor\bootstrap-touchspin\**" />
+    <Compile Remove="wwwroot\vendor\fullcalendar\**" />
+    <Compile Remove="wwwroot\vendor\iCheck\**" />
+    <Compile Remove="wwwroot\vendor\jquery-flot\**" />
+    <Compile Remove="wwwroot\vendor\jquery.flot.spline\**" />
+    <Compile Remove="wwwroot\vendor\metisMenu\**" />
+    <Compile Remove="wwwroot\vendor\pdfmake\**" />
+    <Compile Remove="wwwroot\vendor\peity\**" />
+    <Compile Remove="wwwroot\vendor\select2-3.5.2\**" />
+    <Compile Remove="wwwroot\vendor\select2-bootstrap\**" />
+    <Compile Remove="wwwroot\vendor\slimScroll\**" />
+    <Compile Remove="wwwroot\vendor\sparkline\**" />
+    <Compile Remove="wwwroot\vendor\sweetalert\**" />
+    <Content Remove="wwwroot\vendor\animate.css\**" />
+    <Content Remove="wwwroot\vendor\awesome-bootstrap-checkbox\**" />
+    <Content Remove="wwwroot\vendor\bootstrap-datepicker-master\**" />
+    <Content Remove="wwwroot\vendor\bootstrap-touchspin\**" />
+    <Content Remove="wwwroot\vendor\fullcalendar\**" />
+    <Content Remove="wwwroot\vendor\iCheck\**" />
+    <Content Remove="wwwroot\vendor\jquery-flot\**" />
+    <Content Remove="wwwroot\vendor\jquery.flot.spline\**" />
+    <Content Remove="wwwroot\vendor\metisMenu\**" />
+    <Content Remove="wwwroot\vendor\pdfmake\**" />
+    <Content Remove="wwwroot\vendor\peity\**" />
+    <Content Remove="wwwroot\vendor\select2-3.5.2\**" />
+    <Content Remove="wwwroot\vendor\select2-bootstrap\**" />
+    <Content Remove="wwwroot\vendor\slimScroll\**" />
+    <Content Remove="wwwroot\vendor\sparkline\**" />
+    <Content Remove="wwwroot\vendor\sweetalert\**" />
+    <EmbeddedResource Remove="wwwroot\vendor\animate.css\**" />
+    <EmbeddedResource Remove="wwwroot\vendor\awesome-bootstrap-checkbox\**" />
+    <EmbeddedResource Remove="wwwroot\vendor\bootstrap-datepicker-master\**" />
+    <EmbeddedResource Remove="wwwroot\vendor\bootstrap-touchspin\**" />
+    <EmbeddedResource Remove="wwwroot\vendor\fullcalendar\**" />
+    <EmbeddedResource Remove="wwwroot\vendor\iCheck\**" />
+    <EmbeddedResource Remove="wwwroot\vendor\jquery-flot\**" />
+    <EmbeddedResource Remove="wwwroot\vendor\jquery.flot.spline\**" />
+    <EmbeddedResource Remove="wwwroot\vendor\metisMenu\**" />
+    <EmbeddedResource Remove="wwwroot\vendor\pdfmake\**" />
+    <EmbeddedResource Remove="wwwroot\vendor\peity\**" />
+    <EmbeddedResource Remove="wwwroot\vendor\select2-3.5.2\**" />
+    <EmbeddedResource Remove="wwwroot\vendor\select2-bootstrap\**" />
+    <EmbeddedResource Remove="wwwroot\vendor\slimScroll\**" />
+    <EmbeddedResource Remove="wwwroot\vendor\sparkline\**" />
+    <EmbeddedResource Remove="wwwroot\vendor\sweetalert\**" />
+    <None Remove="wwwroot\vendor\animate.css\**" />
+    <None Remove="wwwroot\vendor\awesome-bootstrap-checkbox\**" />
+    <None Remove="wwwroot\vendor\bootstrap-datepicker-master\**" />
+    <None Remove="wwwroot\vendor\bootstrap-touchspin\**" />
+    <None Remove="wwwroot\vendor\fullcalendar\**" />
+    <None Remove="wwwroot\vendor\iCheck\**" />
+    <None Remove="wwwroot\vendor\jquery-flot\**" />
+    <None Remove="wwwroot\vendor\jquery.flot.spline\**" />
+    <None Remove="wwwroot\vendor\metisMenu\**" />
+    <None Remove="wwwroot\vendor\pdfmake\**" />
+    <None Remove="wwwroot\vendor\peity\**" />
+    <None Remove="wwwroot\vendor\select2-3.5.2\**" />
+    <None Remove="wwwroot\vendor\select2-bootstrap\**" />
+    <None Remove="wwwroot\vendor\slimScroll\**" />
+    <None Remove="wwwroot\vendor\sparkline\**" />
+    <None Remove="wwwroot\vendor\sweetalert\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BuildBundlerMinifier" Version="3.2.449" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.20" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.20" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.20" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.20" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.20" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="Data\" />
+    <Folder Include="wwwroot\css\" />
+    <Folder Include="wwwroot\images\" />
+    <Folder Include="wwwroot\js\" />
+    <Folder Include="wwwroot\lib\bootstrap\" />
+    <Folder Include="wwwroot\lib\bootstrap\dist\js\" />
+    <Folder Include="wwwroot\lib\jquery-validation-unobtrusive\" />
+    <Folder Include="wwwroot\lib\jquery-validation\" />
+    <Folder Include="wwwroot\lib\jquery-validation\dist\" />
+    <Folder Include="wwwroot\lib\jquery\" />
+    <Folder Include="wwwroot\lib\jquery\dist\" />
+  </ItemGroup>
+
+</Project>

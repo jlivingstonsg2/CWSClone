@@ -1,0 +1,40 @@
+﻿<div class="col-lg-12" @*style="margin-top:10px!important"*@>
+    <div class="d-flex justify-content-between">
+        <div class="input-group panel-body no-padding">
+            <input class=" form-control " type="text" placeholder="">
+         
+            </span> <span class="input-group-btn">
+                <button type="button" class="btn btn-primary2 btn-lg p-sm">Sök </button>
+            </span>
+        </div>
+    </div>
+</div>
+<div id="carousel"  class="carousel slide carousel-fade" data-ride="carousel">
+    <div class="carousel-caption" onclick="@("window.location.href='" + @Url.Action("BrandItems", "Product") + "'");" style="cursor:pointer;">
+        <div class="container">
+            <div class="col-lg-12" >
+                @*<h1>
+                        <span style="color:#85cb15">‘Computer’ </span>Web Shop
+                         <span style="color:#85cb15;">All </span> Brands.
+                    </h1>
+                    <p style="color: #fff;">
+                      Put Your Solgan here
+                    </p>*@
+
+
+                <div class="col-sm-7 hpanel m-t-md  homesearch">
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Carousel items -->
+    <div class="carousel-inner">
+        <div class="active item"><img src="@Url.Content("~/images/top1.jpg")" /></div>
+        <div class="item"><img src="@Url.Content("~/images/top2.jpg")" /></div>
+        <div class="item"><img src="@Url.Content("~/images/top3.jpg")" /></div>
+    </div>
+</div>
+
+

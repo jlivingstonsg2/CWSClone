@@ -1,0 +1,112 @@
+﻿
+@{
+    ViewBag.Title = "Computer Web Shop | Brand Items";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section headerSection {
+    @Html.Partial("_LayoutDetailHeader")
+
+}
+<link href="@Url.Content("~/styles/slider.css")" rel="stylesheet" />
+<script src="@Url.Content("~/Scripts/bootstrap-slider.js")"></script>
+
+<section>
+    <div class="container">
+        <div class="col-md-4 col-sm-4">
+            <div class="seller-leftbox text-center">
+                <b>€ 10</b> <input id="ex2" type="text" class="span2" value="" data-slider-min="10" data-slider-max="1000" data-slider-step="5" data-slider-value="[250,450]" /> <b>€ 1000</b>
+            </div>
+            <div class="seller-leftbox text-center">
+                    @*<div class="img-circlebig"> <img src="@Url.Content("~/images/brand/dell.png")" id="imgPhoto" class="img-circle m-b" alt="logo"></div>
+                    <div class="stats-label text-color"> <span id="spnDisplayTitle" class="font-extra-bold font-uppercase"></span></div>
+
+                    <span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span>
+                    <p class="p-m">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text<br />
+
+                    </p>
+                    <p class="p-m">
+                        <span id="spnDescription">
+                            <br />
+                            <small></small>
+                        </span>
+                    </p>*@
+                </div>
+        </div>
+
+        <div class="col-md-8 col-sm-8">
+
+            <div class="container">
+                <div class="hpanel forum-box">
+                    <div class="col-md-12 col-sm-6" style="padding-bottom: 10px;"> <img src="@Url.Content("~/images/sam-small.png")" class="img-responsive"> </div>
+                    <div class="col-md-4 col-sm-6"> <img src="@Url.Content("~/images/pro1.png")" class="img-responsive">
+                                                    <div class="row p-lg" style="padding-left: 0px !important;">
+                                                        <div class="col-md-7">
+                                                            <button type="button" class="btn btn-success btn-lg btn-block">Lägg i kundvagn</button>
+                                                        </div>
+                                                        @*<div class="col-md-5 text-right"><h3 class="no-margins font-extra-bold text-success">$750.90</h3></div>*@
+                                                    </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="seller-leftbox">
+                            <div class="m-b-md">
+                                <h3 class="font-bold">Specifikationer</h3>
+                                <small></small>
+                            </div>
+                            <div class="lsit ">
+                                <div class="well well-sm">
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                                        took a galley of type and scrambled it to make a type specimen book.
+                                    </p>
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        
+
+                        <div></div>
+                    </div>
+                    <div class="col-md-8 col-sm-6" style="padding-top: 10px;">
+                        @*<div class="col-lg-12">*@
+                        <div class="hpanel plan-box active">
+                            <div class="panel-heading hbuilt">
+                                <h5 class="font-bold no-margins">Recensions</h5>
+                            </div>
+                            <div class="well well-sm">
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                </p>
+
+                            </div>
+                            @*</div>*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script>
+    $(document).ready(function () {
+        //alert("show")
+        $("#ex2").slider({});
+
+        // Without JQuery
+        //var slider = new Slider('#ex2', {});
+    });
+</script>

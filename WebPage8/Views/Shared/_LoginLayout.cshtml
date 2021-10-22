@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Computer Web Shop | Login</title>
+
+    <link rel="stylesheet" href="~/styles/site.css" />
+    <script src="~/scripts/site.js"></script>
+
+
+</head>
+
+<body class="landing-page">
+    <!-- Header -->
+    @Html.Partial("_LayoutHeader")
+    <div>
+        <div class="container">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+    </div>
+    <!-- Footer -->
+    @Html.Partial("_LayoutFooter")
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
