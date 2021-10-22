@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WebPage8.Data;
 
 namespace WebPage8.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20211022102641_InitialMigration")]
+    partial class InitialMigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -243,28 +245,28 @@ namespace WebPage8.Data.Migrations
                         new
                         {
                             CategoryId = 1,
-                            BrandUrl = "images/Brand/acer.jpg",
+                            BrandUrl = "images/brands/acer.jpg",
                             Description = "Acer incorporated is now one of the biggest brands in computer hardware and electronics. They're also one of the biggest laptop brands known for their cheap and affordable laptop computers.",
                             Name = "Acer"
                         },
                         new
                         {
                             CategoryId = 2,
-                            BrandUrl = "images/Brand/samsung.jpg",
+                            BrandUrl = "images/brands/samsung.jpg",
                             Description = "Samsung is one of the best laptop manufacturers right now, and over the last few years, it has released some of the best Windows laptops available. Featuring powerful specs, great battery life, and premium designs, Samsung devices are consistently cutting edge and high quality",
                             Name = "Samsung"
                         },
                         new
                         {
                             CategoryId = 3,
-                            BrandUrl = "images/Brand/Lenovo.jfif",
+                            BrandUrl = "images/brands/Lenovo.jfif",
                             Description = "Lenovo is truly an excellent brand to get for your laptop needs! They offer proven and tested reliability for their laptops, and also an amazing value at every price for every user.",
                             Name = "Lenovo"
                         },
                         new
                         {
                             CategoryId = 4,
-                            BrandUrl = "images/Brand/Hp.png",
+                            BrandUrl = "images/brands/Hp.png",
                             Description = "Through it all, HP has earned a reputation for reliable laptops with very competent customer service. Today, HP regularly goes head-to-head with some of the best laptop manufacturers in the world. Customer support options place HP in the top five of all manufacturers.",
                             Name = "Hp"
                         });

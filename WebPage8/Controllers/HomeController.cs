@@ -6,21 +6,33 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using WebPage8.Models;
+using WebPage8.Services;
+using WebPage8.ViewModels;
 
 namespace WebPage8.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        private readonly ICategoryService _categoryService;
+        private readonly IComputerService _computerService;
+
+        public HomeController(ICategoryService categoryService, IComputerService computerService)
         {
-            _logger = logger;
+            _categoryService = categoryService;
+            _computerService = computerService;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(CategoryViewModel categoryViewModel)
         {
-            return View();
+            if (!string.IsNullOrEmpty(categoryViewModel.Search))
+            {
+                return View("ViewItems", _categoryService.FindBy(categoryViewModel));
+            }
+            else
+            {
+                return View(_categoryService.All());
+            }
         }
 
         public IActionResult Privacy()

@@ -1,18 +1,45 @@
-﻿@{
+﻿@model CategoryViewModel
 
+@{
     ViewBag.Title = "Computer Web Shop | Home";
     Layout = "~/Views/Shared/_Layout.cshtml";
-
 }
 
 @section headerSection {
     @Html.Partial("_LayoutHeader")
 }
 
-
-
 @Html.Partial("_Search")
-@Html.Partial("_Items")
 
-@*@Html.Partial("_ProductList")*@
+<section>
+    <div class="container sectionspc">
+        <div class="hpanel forum-box">
+            <div class="row product-container">
+                @foreach (Category category in Model.Categories)
+                {
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="hpanel">
+                            <div class="panel-body no-padding">
+                                <div class="entry-thumbnail">
+                                    <a href="@Url.Action("BrandItems", "Product")">
+                                        <img src="@category.BrandUrl" class="img-responsive" alt="">
+                                     </a>
+                                </div>
+                                <div class="p-sm productdetail">
+                                    <h3>@category.Name</h3>
+                                    <p>@category.Description </p>
+                                    <h4 class="text-success"> no.of items 1 206,40</h4>
+                                    <div class="btn btn-default btn-sm">4.4 <i class="fa fa-star" aria-hidden="true"></i> (78)</div>
+                                    <button type="button" onclick="@("window.location.href='" + @Url.Action("BrandItems", "Product") + "'");" class="btn btn-success btn-sm pull-right">Köp</button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                }
+                </div>
+        </div>
+    </div>
+</section>
+
 
