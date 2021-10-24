@@ -44,10 +44,18 @@
                     <div class="hpanel">
                         <div class="panel-body no-padding poluritm">
                             <div class="entry-thumbnailsmall" style="cursor:pointer;" onclick="@("window.location.href='" + @Url.Action("Detail", "Product") + "'");"> <img src="@Url.Content("~/images/pro2.png")" class="img-responsive"> </div>
-                            <div class="p-sm productdetail" style="margin-bottom: 30px !important;">
+                            <div class="p-sm productdetail" >
                                 <h4>Item Title</h4>
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                <button type="button" onclick="@("window.location.href='" + @Url.Action("Detail", "Product") + "'");" class="btn btn-success btn-sm pull-right">Köp</button>
+                                <div class="row" style="padding-left: 0px !important;">
+                                    <div class="col-md-5">
+                                        <h3 class="no-margins text-success"> $1 206,40</h3>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <button type="button" onclick="@("window.location.href='" + @Url.Action("Detail", "Product") + "'");" class="btn btn-success btn-sm pull-right">Köp</button>
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -56,10 +64,18 @@
                     <div class="hpanel">
                         <div class="panel-body no-padding poluritm">
                             <div class="entry-thumbnailsmall" style="cursor:pointer;" onclick="@("window.location.href='" + @Url.Action("Detail", "Product") + "'");"> <img src="@Url.Content("~/images/pro2.png")" class="img-responsive"> </div>
-                            <div class="p-sm productdetail" style="margin-bottom: 30px !important;">
+                            <div class="p-sm productdetail">
                                 <h4>Item Title</h4>
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                <button type="button" onclick="@("window.location.href='" + @Url.Action("Detail", "Product") + "'");" class="btn btn-success btn-sm pull-right">Köp</button>
+                                <div class="row" style="padding-left: 0px !important;">
+                                    <div class="col-md-5">
+                                        <h3 class="no-margins text-success"> $1 206,40</h3>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <button type="button" onclick="@("window.location.href='" + @Url.Action("Detail", "Product") + "'");" class="btn btn-success btn-sm pull-right">Köp</button>
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -68,12 +84,20 @@
                     <div class="hpanel">
                         <div class="panel-body no-padding poluritm">
                             <div class="entry-thumbnailsmall" style="cursor:pointer;" onclick="@("window.location.href='" + @Url.Action("Detail", "Product") + "'");"> <img src="@Url.Content("~/images/pro2.png")" class="img-responsive"> </div>
-                            <div class="p-sm productdetail" style="margin-bottom: 30px !important;">
+                            <div class="p-sm productdetail">
                                 <h4>Item Title</h4>
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                <button type="button" onclick="@("window.location.href='" + @Url.Action("Detail", "Product") + "'");" class="btn btn-success btn-sm pull-right">Köp</button>
+                                <div class="row" style="padding-left: 0px !important;">
+                                    <div class="col-md-5">
+                                        <h3 class="no-margins text-success"> $1 206,40</h3>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <button type="button" onclick="@("window.location.href='" + @Url.Action("Detail", "Product") + "'");" class="btn btn-success btn-sm pull-right">Köp</button>
+                                    </div>
+
+                                </div>
+                                </div>
                             </div>
-                        </div>
                     </div>
                 </div>
 
@@ -81,10 +105,18 @@
                     <div class="hpanel">
                         <div class="panel-body no-padding poluritm">
                             <div class="entry-thumbnailsmall" style="cursor:pointer;" onclick="@("window.location.href='" + @Url.Action("Detail", "Product") + "'");"> <img src="@Url.Content("~/images/pro2.png")" class="img-responsive"> </div>
-                            <div class="p-sm productdetail" style="margin-bottom: 30px !important;">
+                            <div class="p-sm productdetail" >
                                 <h4>Item Title</h4>
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                <button type="button" onclick="@("window.location.href='" + @Url.Action("Detail", "Product") + "'");" class="btn btn-success btn-sm pull-right">Köp</button>
+                                <div class="row" style="padding-left: 0px !important;">
+                                    <div class="col-md-5">
+                                        <h3 class="no-margins text-success"> $1 206,40</h3>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <button type="button" onclick="@("window.location.href='" + @Url.Action("Detail", "Product") + "'");" class="btn btn-success btn-sm pull-right">Köp</button>
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -108,16 +140,16 @@
                 $("#txtBrandName").text("Samsung");
                 break;
             case 3:
-                $("#txtBrandName").text("Dell");
+                $("#txtBrandName").text("Lenovo");
                 break;
             case 4:
                 $("#txtBrandName").text("HP");
                 break;
             case 5:
-                $("#txtBrandName").text("Asus");
+                $("#txtBrandName").text("Dell");
                 break;
             case 6:
-                $("#txtBrandName").text("Lenovo");
+                $("#txtBrandName").text("Asus");
                 break;
             default:
                 $("#txtBrandName").text("Dell");

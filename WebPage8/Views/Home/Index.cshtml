@@ -21,16 +21,16 @@
                         <div class="hpanel">
                             <div class="panel-body no-padding">
                                 <div class="entry-thumbnail">
-                                    <a href="@Url.Action("BrandItems", "Product")">
+                                    <a href="/Product/BrandItems/@category.CategoryId">
                                         <img src="@category.BrandUrl" class="img-responsive" alt="">
                                      </a>
                                 </div>
                                 <div class="p-sm productdetail">
                                     <h3>@category.Name</h3>
                                     <p>@category.Description </p>
-                                    <h4 class="text-success"> no.of items 1 206,40</h4>
-                                    <div class="btn btn-default btn-sm">4.4 <i class="fa fa-star" aria-hidden="true"></i> (78)</div>
-                                    <button type="button" onclick="@("window.location.href='" + @Url.Action("BrandItems", "Product") + "'");" class="btn btn-success btn-sm pull-right">Köp</button>
+                                    @*<h4 class="text-success"> no.of items 1 206,40</h4>*@
+                                    <div class="btn btn-sm">@*4.4 <i class="fa fa-star" aria-hidden="true"></i> (78)*@</div>
+                                    <button type="button" onclick="@("window.location.href='/Product/BrandItems/")@category.CategoryId'" class="btn btn-success btn-sm pull-right">@category.Name</button>
                                 </div>
                                 
                             </div>
